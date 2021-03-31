@@ -1,6 +1,6 @@
 # Examine
 
-This file show an example of a Examine a comparisone from 
+This file show an example of a Examine a comparisone between 
 two different output with the same messages, 
 in a way choose the best in terms of meaning transfer to the user:
 
