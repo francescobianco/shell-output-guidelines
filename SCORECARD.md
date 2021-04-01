@@ -1,6 +1,6 @@
 # Scorecard
 
-Score cart is a grid of Aspect can be evaluatued by a user or a group of user fo a single piece of output (just one line of chars) insteaod of a long user experience.
+Scorecard is a grid of Aspects can be evaluatued by a user or a group of user for a single piece of output (just one line of chars) as well as a long user experience.
 
 ## Aspects
 
