@@ -7,7 +7,7 @@ The mission is define the right way to use something like `...` at the end of a 
 
 ## Candidate Topics
 
-- Use of pseudo plural with `/s` in counted elements (eg. The are 1 item/s on the list)
+- Use of pseudo plural with `/s` in counted elements (eg. `The are 1 item/s on the list`)
 - Use symbol at the beginning of each line of output (eg. `>>> This is a message`)
 
 ## Questions
