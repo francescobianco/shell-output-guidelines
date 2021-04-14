@@ -12,21 +12,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      # curl -o setup-bpkg.sh http://get.bpkg.sh/
+      #          bash setup-bpkg.sh
+      #          rm -f setup-bpkg.sh
+      #
       - run: |
+          SHOWCASE=$(cat << EOF
+          ls -l
+          date -u
+          EOF
+          )
           echo "# Showcase" > SHOWCASE.md
           echo "This file collect a lot of real output useful to perform guidelines study" >> SHOWCASE.md
-          SHOWCASE=$(cat << EOF
-          curl -o setup-bpkg.sh http://get.bpkg.sh/
-          bash setup-bpkg.sh
-          rm -f setup-bpkg.sh
-          EOF
-          )          
           while IFS= read -r command; do
             echo "\`\`\`shell" >> SHOWCASE.md
             echo "\$ ${command}" >> SHOWCASE.md
             ${command} >> SHOWCASE.md 2>&1 
             echo "\`\`\`" >> SHOWCASE.md
           done <<< "$SHOWCASE"
+          cat SHOWCASE.md
           curl -sLX PUT https://api.github.com/repos/francescobianco/shell-output-guidelines/contents/SHOWCASE.md \
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
