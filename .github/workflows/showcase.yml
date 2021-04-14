@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          declare -a showcase=(
-            "ls"
-            "date"
-          )
+          declare -a showcase=( \
+            "ls" \
+            "date" \
+          ) 
           for command in "${showcase[@]}"; do
             ( 
               echo "```shell"
@@ -28,6 +28,6 @@ jobs:
           curl \
             -X PUT \
             -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: token %GITHUB_ACCESS_TOKEN%" \
+            -H "Authorization: token ${GITHUB_TOKEN}" \
             -L "https://api.github.com/repos/francescobianco/shell-output-guidelines/SHOWCASE.md" 
             -d "{\"message\":\"Showcase update\",\"content\":\"$(base64 SHOWCASE.md)\"}"
