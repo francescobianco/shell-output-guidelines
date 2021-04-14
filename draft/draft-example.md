@@ -3,10 +3,10 @@
 ### Problematic output
 
 ```shell
-$ example command
+$ command example 
 .
 .
-problematic example output
+problematic output
 .
 .
 ```
@@ -14,10 +14,10 @@ problematic example output
 ### Correct output
 
 ```shell
-$ example command
+$ command example 
 .
 .
-correct example output
+correct output
 .
 .
 ```
