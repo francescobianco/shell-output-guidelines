@@ -6,7 +6,7 @@
 $ example command
 .
 .
-example output
+problematic example output
 .
 .
 ```
@@ -14,10 +14,10 @@ example output
 ### Correct output
 
 ```shell
-$ problematic example command
+$ example command
 .
 .
-problematic example output
+correct example output
 .
 .
 ```
