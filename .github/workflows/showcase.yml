@@ -13,8 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          showcase=<<<COMMANDS
+          SHOWCASE=$(cat << EOF
           ls
           date
-          COMMANDS
-          
+          EOF
+          )          
+          while IFS= read -r command; do
+            echo "$command"
+          done <<< "$SHOWCASE"
