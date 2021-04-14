@@ -2,6 +2,8 @@
 
 > Discussion about shell output
 
+[![Spellcheck](https://github.com/francescobianco/shell-output-guidelines/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/francescobianco/shell-output-guidelines/actions/workflows/spellcheck.yml)
+
 The purpose of this repository is collect and discuss guidelines, rules, suggestion for presenting output in a shell (Looking for the best way or a standard way todo).
 The mission is define the right way to use something like `...` at the end of a sentence to notify user for on-going process and stuff like that.
 
