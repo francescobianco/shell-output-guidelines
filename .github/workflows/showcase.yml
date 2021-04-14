@@ -18,6 +18,7 @@ jobs:
       #
       - run: |
           SHOWCASE=$(cat << EOF
+          curl -o setup-bpkg.sh http://get.bpkg.sh/
           ls -l
           date -u
           EOF
@@ -27,7 +28,7 @@ jobs:
           while IFS= read -r command; do
             echo "\`\`\`shell" >> SHOWCASE.md
             echo "\$ ${command}" >> SHOWCASE.md
-            ${command} >> SHOWCASE.md 2>&1 
+            ${command} >> SHOWCASE.md 2>&1 && true
             echo "\`\`\`" >> SHOWCASE.md
           done <<< "$SHOWCASE"
           cat SHOWCASE.md
