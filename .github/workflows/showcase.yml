@@ -22,10 +22,10 @@ jobs:
           EOF
           )          
           while IFS= read -r command; do
-            echo '```shell' >> SHOWCASE.md
+            echo "\`\`\`shell" >> SHOWCASE.md
             echo "\$ ${command}" >> SHOWCASE.md
             ${command} >> SHOWCASE.md 2>&1 
-            echo '```' >> SHOWCASE.md
+            echo "\`\`\`" >> SHOWCASE.md
           done <<< "$SHOWCASE"
           curl -sLX PUT https://api.github.com/repos/francescobianco/shell-output-guidelines/contents/SHOWCASE.md \
             -H "Accept: application/vnd.github.v3+json" \
