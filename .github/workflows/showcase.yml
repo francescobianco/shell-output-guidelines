@@ -28,6 +28,6 @@ jobs:
             -X PUT \
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token ${GITHUB_TOKEN}" \
-            -L "https://api.github.com/repos/francescobianco/shell-output-guidelines/SHOWCASE.md" 
+            -L "https://api.github.com/repos/francescobianco/shell-output-guidelines/SHOWCASE.md" \
             -d "{\"message\":\"Showcase update\",\"content\":\"$(base64 SHOWCASE.md)\"}"
             
