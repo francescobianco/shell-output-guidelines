@@ -30,4 +30,4 @@ jobs:
           curl -sLX PUT https://api.github.com/repos/francescobianco/shell-output-guidelines/contents/SHOWCASE.md \
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            -d "{\"message\":\"Showcase update\",\"content\":\"$(base64 -w0 SHOWCASE.md)\",\"sha\":\"$(git ls-files -s SHOWCASE.md | cut -c8-47)\"}"
+            -d "{\"message\":\"Update SHOWCASE.md\",\"content\":\"$(base64 -w0 SHOWCASE.md)\",\"sha\":\"$(git ls-files -s SHOWCASE.md | cut -c8-47)\"}"
