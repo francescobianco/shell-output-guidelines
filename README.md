@@ -20,15 +20,14 @@ Processing is stated...
 Process is done.
 ```
 
-## Decision Tools
-
-Decisions tools are described and repeatable actions that can be administered and performed by users or developers to add value and knowledge. So that they can make decisions based on their results.
-
-- [SCORECARD.md](SCORECARD.md)
-
 ## Defining Process
 
 Guidelines growth from a Topics synthesys, We put in place a Decisioning/Definining process based on facts extracted from Decision Tools results. Enteire Defining Process is described in the following file
 
 - [GUIDELINES.md](GUIDELINES.md)
 
+## Decision Tools
+
+Decisions tools are described and repeatable actions that can be administered and performed by users or developers to add value and knowledge. So that they can make decisions based on their results.
+
+- [SCORECARD.md](SCORECARD.md)
