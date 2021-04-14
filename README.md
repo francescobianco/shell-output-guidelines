@@ -2,6 +2,7 @@
 
 > Discussion about shell output
 
+[![Markdown](https://github.com/francescobianco/shell-output-guidelines/actions/workflows/markdown.yml/badge.svg)](https://github.com/francescobianco/shell-output-guidelines/actions/workflows/markdown.yml)
 [![Spellcheck](https://github.com/francescobianco/shell-output-guidelines/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/francescobianco/shell-output-guidelines/actions/workflows/spellcheck.yml)
 
 The purpose of this repository is collect and discuss guidelines, rules, suggestion for presenting output in a shell (Looking for the best way or a standard way todo).
