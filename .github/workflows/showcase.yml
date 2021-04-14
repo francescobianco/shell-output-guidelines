@@ -19,5 +19,15 @@ jobs:
           EOF
           )          
           while IFS= read -r command; do
-            echo "$command"
-          done <<< "$SHOWCASE"
+            echo "```shell" >> SHOWCASE.md
+            echo "\$ ${command}" >> SHOWCASE.md
+            ${command} >> SHOWCASE.md 2>&1 
+            echo "```" >> SHOWCASE.md
+          done <<< "$SHOWCASE"       
+          curl \
+            -X PUT \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${GITHUB_TOKEN}" \
+            -L "https://api.github.com/repos/francescobianco/shell-output-guidelines/SHOWCASE.md" 
+            -d "{\"message\":\"Showcase update\",\"content\":\"$(base64 SHOWCASE.md)\"}"
+            
