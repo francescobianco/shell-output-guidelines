@@ -4,8 +4,8 @@ This file collect a lot of real output useful to perform guidelines study
 $ curl -Lo setup-bpkg.sh http://get.bpkg.sh/
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    94  100    94    0     0    583      0 --:--:-- --:--:-- --:--:--   583
-100  2374  100  2374    0     0   7044      0 --:--:-- --:--:-- --:--:--  7044
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    94  100    94    0     0    425      0 --:--:-- --:--:-- --:--:--   425
+100  2374  100  2374    0     0   6539      0 --:--:-- --:--:-- --:--:--  6539100  2374  100  2374    0     0   6539      0 --:--:-- --:--:-- --:--:--     0
 ? 0
 ```
 ```
@@ -58,6 +58,6 @@ ln -s umq.sh umq
 ```
 ```
 $ ump --help
-/home/runner/work/_temp/26ace8b8-1539-4258-9ec6-400d3630b36a.sh: line 14: ump: command not found
+/home/runner/work/_temp/15557a9b-af2c-4094-aa97-9386f270895e.sh: line 14: ump: command not found
 ? 127
 ```
