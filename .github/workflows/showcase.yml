@@ -18,9 +18,9 @@ jobs:
       #
       - run: |
           SHOWCASE=$(cat << EOF
-          curl -o setup-bpkg.sh http://get.bpkg.sh/
-          ls -l
-          date -u
+          curl -Lo setup-bpkg.sh http://get.bpkg.sh/
+          bash setup-bpkg.sh
+          rm -f setup-bpkg.sh
           EOF
           )
           echo "# Showcase" > SHOWCASE.md
