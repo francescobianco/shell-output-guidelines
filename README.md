@@ -19,7 +19,7 @@ The mission is define the right way to use something like `...` at the end of a 
 
 ```
 $ command run --process
-Processing is stated...
+Process is started...
 Process is done.
 ```
 
