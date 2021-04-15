@@ -4,8 +4,9 @@ This file collect a lot of real output useful to perform guidelines study
 $ curl -Lo setup-bpkg.sh http://get.bpkg.sh/
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    94  100    94    0     0    357      0 --:--:-- --:--:-- --:--:--   357
-100  2374  100  2374    0     0   6668      0 --:--:-- --:--:-- --:--:--  6668
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    94  100    94    0     0    329      0 --:--:-- --:--:-- --:--:--   330
+100  2374  100  2374    0     0   6347      0 --:--:-- --:--:-- --:--:--  6347
+? 0
 ```
 ```shell
 $ bash setup-bpkg.sh
@@ -19,7 +20,9 @@ $ bash setup-bpkg.sh
   info: Uninstalling /home/runner/.local/bin/bpkg...
   info: Installing /home/runner/.local/bin/bpkg...
   info: Done!
+? 0
 ```
 ```shell
 $ rm -f setup-bpkg.sh
+? 0
 ```
