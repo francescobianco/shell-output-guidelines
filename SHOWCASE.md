@@ -16,17 +16,39 @@ $ ./get-bpkg.sh
 ? 0
 ```
 ```
-$ bpkg install is
+$ bpkg install qzb/is.sh
 
-    info: Install /bpkg/is/master from remote https://raw.githubusercontent.com [https://github.com]
-    warn: package.json doesn`t exist
-    warn: Makefile not found, skipping remote: https://raw.githubusercontent.com/bpkg/is/master
-    error: package not found on any remote
+    info: Install /qzb/is.sh/master from remote https://raw.githubusercontent.com [https://github.com]
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+/home/runner/.local/bin/bpkg-json: line 172: printf: write error: Broken pipe
+    info: Install dependencies for is.sh
+    fetch: https://raw.githubusercontent.com/qzb/is.sh/master/shellcheck
+    write: /home/runner/work/shell-output-guidelines/shell-output-guidelines/deps/is.sh/shellcheck
+    shellcheck to PATH: /home/runner/work/shell-output-guidelines/shell-output-guidelines/deps/bin/shellcheck
+    fetch: https://raw.githubusercontent.com/qzb/is.sh/master/./tests/tests.sh
+    write: /home/runner/work/shell-output-guidelines/shell-output-guidelines/deps/is.sh/./tests/tests.sh
+    tests to PATH: /home/runner/work/shell-output-guidelines/shell-output-guidelines/deps/bin/tests
 
 ? 0
 ```
 ```
-$ ./deps/is/is.sh --help
-/home/runner/work/_temp/516e3cbb-a032-42e1-8d6a-f72f3978b1bd.sh: line 16: ./deps/is/is.sh: No such file or directory
+$ ./deps/bin/is --help
+/home/runner/work/_temp/ffd31cf8-caa0-4828-b570-00488b0d8d29.sh: line 16: ./deps/bin/is: No such file or directory
 ? 0
 ```
