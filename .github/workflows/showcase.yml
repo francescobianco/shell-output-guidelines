@@ -21,14 +21,14 @@ jobs:
           EOF
           )
           curl -sL http://get.bpkg.sh/ | bash -
-          bpkg install -g javanile/sharp@main 
+          bpkg install javanile/sharp@main 
           echo "# Showcase" > SHOWCASE.md
           echo "This file collect a lot of real output useful to perform guidelines study" >> SHOWCASE.md
           while IFS= read -r command; do
             echo "\`\`\`" >> SHOWCASE.md
             echo "\$ ${command}" >> SHOWCASE.md
             ${command} > output 2>&1 && true
-            cat output | sharp >> SHOWCASE.md
+            cat output | ./deps/bin/sharp >> SHOWCASE.md
             echo "? $?" >> SHOWCASE.md
             echo "\`\`\`" >> SHOWCASE.md
           done <<< "$SHOWCASE"
