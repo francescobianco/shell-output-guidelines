@@ -1,15 +1,7 @@
 # Showcase
 This file collect a lot of real output useful to perform guidelines study
 ```
-$ curl -Lo get-bpkg.sh http://get.bpkg.sh/
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    94  100    94    0     0    386      0 --:--:-- --:--:-- --:--:--   386
-100  2374  100  2374    0     0   8508      0 --:--:-- --:--:-- --:--:--  8508
-? 0
-```
-```
-$ bash get-bpkg.sh
+$ ./get-bpkg.sh
   info: Welcome to the 'bpkg' installer!
   info: Checking for git...
 
@@ -24,17 +16,17 @@ $ bash get-bpkg.sh
 ? 0
 ```
 ```
-$ bpkg install is@main
+$ bpkg install is
 
-    info: Install /bpkg/is/main from remote https://raw.githubusercontent.com [https://github.com]
+    info: Install /bpkg/is/master from remote https://raw.githubusercontent.com [https://github.com]
     warn: package.json doesn`t exist
-    warn: Makefile not found, skipping remote: https://raw.githubusercontent.com/bpkg/is/main
+    warn: Makefile not found, skipping remote: https://raw.githubusercontent.com/bpkg/is/master
     error: package not found on any remote
 
 ? 0
 ```
 ```
-$ is --help
-/home/runner/work/_temp/534b0bed-a4a3-4db5-a9cf-6fdf1b897803.sh: line 15: is: command not found
+$ ./deps/is/is.sh --help
+/home/runner/work/_temp/516e3cbb-a032-42e1-8d6a-f72f3978b1bd.sh: line 16: ./deps/is/is.sh: No such file or directory
 ? 0
 ```
