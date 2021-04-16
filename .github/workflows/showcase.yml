@@ -16,12 +16,12 @@ jobs:
           SHOWCASE=$(cat << EOF
           curl -Lo get-bpkg.sh http://get.bpkg.sh/
           bash get-bpkg.sh
-          bpkg install is
+          bpkg install is@main
           is --help
           EOF
           )
           curl -sL http://get.bpkg.sh/ | bash -
-          bpkg install -g javanile/sharp 
+          bpkg install -g javanile/sharp@main 
           echo "# Showcase" > SHOWCASE.md
           echo "This file collect a lot of real output useful to perform guidelines study" >> SHOWCASE.md
           while IFS= read -r command; do
