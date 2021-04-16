@@ -14,20 +14,21 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           SHOWCASE=$(cat << EOF
-          curl -Lo setup-bpkg.sh http://get.bpkg.sh/
-          bash setup-bpkg.sh
-          rm -f setup-bpkg.sh
+          curl -Lo get-bpkg.sh http://get.bpkg.sh/
+          bash get-bpkg.sh
           bpkg install is
           is --help
           EOF
           )
+          curl -sL http://get.bpkg.sh/ | bash -
+          bpkg install -g javanile/sharp 
           echo "# Showcase" > SHOWCASE.md
           echo "This file collect a lot of real output useful to perform guidelines study" >> SHOWCASE.md
           while IFS= read -r command; do
             echo "\`\`\`" >> SHOWCASE.md
             echo "\$ ${command}" >> SHOWCASE.md
             ${command} > output 2>&1 && true
-            cat output | sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g' >> SHOWCASE.md
+            cat output | sharp >> SHOWCASE.md
             echo "? $?" >> SHOWCASE.md
             echo "\`\`\`" >> SHOWCASE.md
           done <<< "$SHOWCASE"
