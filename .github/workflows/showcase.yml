@@ -26,12 +26,11 @@ jobs:
           while IFS= read -r command; do
             echo "\`\`\`" >> SHOWCASE.md
             echo "\$ ${command}" >> SHOWCASE.md
-            ${command} | sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g' > output 2>&1 && true
-            cat output >> SHOWCASE.md
+            ${command} > output 2>&1 && true
+            cat output | sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g' >> SHOWCASE.md
             echo "? $?" >> SHOWCASE.md
             echo "\`\`\`" >> SHOWCASE.md
           done <<< "$SHOWCASE"
-          cat SHOWCASE.md
           curl -sLX PUT https://api.github.com/repos/francescobianco/shell-output-guidelines/contents/SHOWCASE.md \
             -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
