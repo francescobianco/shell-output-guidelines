@@ -17,8 +17,8 @@ jobs:
           curl -Lo setup-bpkg.sh http://get.bpkg.sh/
           bash setup-bpkg.sh
           rm -f setup-bpkg.sh
-          bpkg install umq -g
-          ump --help
+          bpkg install is
+          is --help
           EOF
           )
           echo "# Showcase" > SHOWCASE.md
