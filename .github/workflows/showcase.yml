@@ -26,7 +26,8 @@ jobs:
           while IFS= read -r command; do
             echo "\`\`\`" >> SHOWCASE.md
             echo "\$ ${command}" >> SHOWCASE.md
-            ${command} >> SHOWCASE.md 2>&1 && true
+            ${command} | sed 's/\x1B\[[0-9;]\{1,\}[A-Za-z]//g' > output 2>&1 && true
+            cat output >> SHOWCASE.md
             echo "? $?" >> SHOWCASE.md
             echo "\`\`\`" >> SHOWCASE.md
           done <<< "$SHOWCASE"
