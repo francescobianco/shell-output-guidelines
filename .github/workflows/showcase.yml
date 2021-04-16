@@ -14,13 +14,14 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           SHOWCASE=$(cat << EOF
-          curl -Lo get-bpkg.sh http://get.bpkg.sh/
-          bash get-bpkg.sh
-          bpkg install is@main
-          is --help
+          ./get-bpkg.sh
+          bpkg install is
+          ./deps/is/is.sh --help
           EOF
           )
-          curl -sL http://get.bpkg.sh/ | bash -
+          curl -sLo get-bpkg.sh http://get.bpkg.sh/
+          chmod +x get-bpkg.sh
+          bash get-bpkg.sh
           bpkg install javanile/sharp@main 
           echo "# Showcase" > SHOWCASE.md
           echo "This file collect a lot of real output useful to perform guidelines study" >> SHOWCASE.md
