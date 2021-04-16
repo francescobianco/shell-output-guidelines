@@ -15,8 +15,8 @@ jobs:
       - run: |
           SHOWCASE=$(cat << EOF
           ./get-bpkg.sh
-          bpkg install is
-          ./deps/is/is.sh --help
+          bpkg install qzb/is.sh
+          ./deps/bin/is --help
           EOF
           )
           curl -sLo get-bpkg.sh http://get.bpkg.sh/
