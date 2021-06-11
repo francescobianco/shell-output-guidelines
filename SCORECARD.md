@@ -18,6 +18,6 @@ Created.
 
 | Aspects | Score |
 | --- | --- |
-| Human Readbility | 5 |
+| Human Readbility | 4 |
 | Machine Readbility | 2 |
 
