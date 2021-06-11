@@ -49,6 +49,6 @@ $ bpkg install qzb/is.sh
 ```
 ```
 $ ./deps/bin/is --help
-/home/runner/work/_temp/ffd31cf8-caa0-4828-b570-00488b0d8d29.sh: line 16: ./deps/bin/is: No such file or directory
+/home/runner/work/_temp/372adbc8-e545-4ddb-bc6a-ad0c5ffd7e42.sh: line 16: ./deps/bin/is: No such file or directory
 ? 0
 ```
