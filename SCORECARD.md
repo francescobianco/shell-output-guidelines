@@ -10,8 +10,14 @@ An aspect is an elemeent well described into [GUIDELINES.md]
 
 Score is a value from 1 to 5, it represent points (Score), 1 is lowest/bad meaing, 5 is highest/good meaning
 
+```shell
+$ sog create --name Test
+>> Creating record...
+Created.
+```
+
 | Aspects | Score |
 | --- | --- |
 | Human Readbility | 5 |
-| Machine Readbility | 5 |
+| Machine Readbility | 2 |
 
